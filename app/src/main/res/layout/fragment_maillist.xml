@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/darker_gray">
+        <LinearLayout
+            android:id="@+id/Layout_add_find"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="新的联系人"
+                    android:gravity="center|left"
+                    android:drawableLeft="@drawable/add_friend"
+                    android:drawableRight="@drawable/enter"
+                    tools:ignore="HardcodedText,RtlHardcoded"/>
+            </LinearLayout>
+
+
+
+            <com.example.administrator.my_ali_im.widget.NoScrollListview
+                android:id="@+id/list_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_marginTop="10dp">
+
+
+            </com.example.administrator.my_ali_im.widget.NoScrollListview>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
